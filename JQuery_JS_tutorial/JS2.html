@@ -1,0 +1,27 @@
+<html>
+
+
+<head>
+<!-- external js file -->
+<script src="/path/to/example.js"></script>
+
+</head>
+
+<body>
+<!-- embedded code -->
+<script>
+	alert("Hello world!");
+</script>
+
+<h1 id="hello-world">Hello world</h1>
+
+	<!-- usually the script tag goes at the bottom before the body tag if it needs to access elements in the HTMl-so the element (hello world here) is declared before it is called by the javascript
+	-->
+	<script>
+	var title = document.getElementById("hello-world");
+	console.log( title );
+	</script>
+
+
+</body>
+</html>

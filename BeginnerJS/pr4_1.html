@@ -1,0 +1,28 @@
+<html>
+<head>
+	<title>Functions</title>
+
+	<script type="text/javascript">
+	function show_message() {
+		window.alert("Attention, biatch!");
+	}
+
+	function call_new_message() {
+		window.alert("yeah, buddy. I'm nested!");
+	}
+
+	function new_message () {
+		call_new_message();
+	}
+
+	window.alert("I got in first!");
+	show_message();
+	new_message();
+	</script>
+
+</head>
+
+<body>
+
+
+</body>
